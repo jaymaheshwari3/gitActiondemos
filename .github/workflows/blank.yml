@@ -8,7 +8,7 @@ on:
  workflow_dispatch:
 jobs:
  Logintodockerhub:
- runs-on: ubuntu-latest
+ runs-on: self-hosted
  environment: Dev
  steps:
  - uses: actions/checkout@v3
@@ -21,7 +21,7 @@ jobs:
  
  
  Logintodockerhub:
- runs-on: ubuntu-latest
+ runs-on: self-hosted
  environment: QA
  steps:
  - uses: actions/checkout@v3
