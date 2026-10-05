@@ -11,7 +11,7 @@ on:
 
 jobs:
   logintodockerhub:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     environment: Dev
 
     steps:
@@ -28,7 +28,7 @@ jobs:
         run: docker --version
 
   logintodockerhubqa:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     environment: QA
 
     steps:
